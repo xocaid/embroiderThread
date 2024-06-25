@@ -29,4 +29,8 @@ def create_thread_menu():
     new_thread['brand'] = select_thread()
     emb_thread['threads'].append(new_thread)
     
-    print(emb_thread)
+    # Can unhighlight once done debugging
+    # print(emb_thread)
+
+    # This line for debugging purposes
+    print(str(emb_thread) + 'create_thread.py')
