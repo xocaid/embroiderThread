@@ -1,6 +1,6 @@
 # CREATE THREAD
 from embroidery_thread import emb_thread
-from menus.select_thread import select_thread
+from menus.threads import select_thread
 
 def create_thread_menu():
     print('Add a New Thread to Inventory')

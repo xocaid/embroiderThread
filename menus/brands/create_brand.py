@@ -9,6 +9,7 @@ def create_brand_menu():
     name = input('Name: ')
     new_brand['name'] = name.title()
     new_brand['id'] = generate_brand_id()
+    emb_thread['brands'].append(new_brand)
 
 def generate_brand_id():
     if len(emb_thread['brands']) == 0:
