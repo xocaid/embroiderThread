@@ -8,7 +8,7 @@ def main():
     print('1. Manage Brands')
     print('2. Manage Threads')
 
-    user_input = user_input_int()
+    user_input = user_input_int(2)
 
     if user_input == 1:
         manage_brands_menu()

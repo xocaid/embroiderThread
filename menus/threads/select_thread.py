@@ -12,6 +12,7 @@ def select_thread():
     for x in range(0, len(emb_thread['brands'])):
         print(x+1,'.', emb_thread['brands'][x])
 
-    user_input = user_input_int()
-    print(emb_thread['brands'][user_input-1])
+    user_input = user_input_int(len(emb_thread['brands']))
+    # For debugging purposes, can delete when done
+    print(str(emb_thread['brands'][user_input-1]) + 'select_thread()')
     return emb_thread['brands'][user_input-1]

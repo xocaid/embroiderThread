@@ -13,7 +13,7 @@ def manage_brands_menu():
     print('3. Edit Brand')
     print('4. Delete Brand')
 
-    user_input = user_input_int()
+    user_input = user_input_int(4)
 
     if user_input == 1:
         list_brand_menu()

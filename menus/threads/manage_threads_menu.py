@@ -13,7 +13,7 @@ def manage_threads_menu():
     print('3. Edit Thread')
     print('4. Delete Thread')
 
-    user_input = user_input_int()
+    user_input = user_input_int(4)
 
     if user_input == 1:
         list_thread_menu()

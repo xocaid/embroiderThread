@@ -1,6 +1,6 @@
 # CREATE THREAD
 from embroidery_thread import emb_thread
-from menus.threads import select_thread
+from menus.threads.select_thread import select_thread
 
 def create_thread_menu():
     print('Add a New Thread to Inventory')
@@ -28,9 +28,5 @@ def create_thread_menu():
     
     new_thread['brand'] = select_thread()
     emb_thread['threads'].append(new_thread)
-    
-    # Can unhighlight once done debugging
-    # print(emb_thread)
 
-    # This line for debugging purposes
-    print(str(emb_thread) + 'create_thread.py')
+    print('New Thread Created: ' + str(emb_thread['threads'][-1]))
