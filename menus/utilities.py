@@ -1,10 +1,13 @@
 # Helper Functions
+
+# Function requests user input. 
+# maxNum is the max/last number displayed on the list; numbers not on the list will not exist and may cause error
 def user_input_int(maxNum):
     while True:
         user_input = input('Enter a number.')
 
     ## Can delete once done - only for debugging purposes
-        print(str(user_input) + 'user_input_int() --> utilities.py')
+        print('Printing from utilities.py --> user_input_int(). User input: ' + str(user_input) )
 
         try:
             user_input = int(user_input)
@@ -14,13 +17,15 @@ def user_input_int(maxNum):
         except ValueError:
             print("Try again, enter a number.")
 
+# Function requests user input. 
+# maxNum is the max/last number displayed on the list; numbers not on the list will not exist and may cause error
+# valid_options --> represents only the valid letter(s).
 def user_input_option(valid_options, maxNum):
     while True:
         user_input = input('Enter your selection.')
 
     ## Can delete once done - only for debugging purposes
-        print(user_input)
-        print('Printing from user_input_option --> utilities.py')
+        print('Printing from utilities.py  --> user_input_option. User input: '+ str(user_input))
 
         try:
             user_input = int(user_input)

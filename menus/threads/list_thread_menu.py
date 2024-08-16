@@ -10,7 +10,7 @@ def list_thread_menu():
     print('A. Show all')
     user_input = user_input_option(['A'],len(emb_thread['brands']) )
 
-
+# Variable is show_all-->it is assigned the value user_input == 'A' (boolean)
     show_all = user_input == 'A'    
     if show_all:
         brand_listed = None
