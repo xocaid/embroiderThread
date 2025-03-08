@@ -1,5 +1,5 @@
 from embroidery_thread import emb_thread
-from menus.utilities import user_input_option
+from menus.utilities import user_input_numalp
 
 def list_thread_menu():
     print('What Thread list would you like to see?')
@@ -8,7 +8,7 @@ def list_thread_menu():
         print(x+1,'.', emb_thread['brands'][x]['name'])
 
     print('A. Show all')
-    user_input = user_input_option(['A'],len(emb_thread['brands']) )
+    user_input = user_input_numalp(['A'],len(emb_thread['brands']) )
 
 # Variable is show_all-->it is assigned the value user_input == 'A' (boolean)
     show_all = user_input == 'A'    
